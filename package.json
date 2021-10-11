@@ -1,0 +1,54 @@
+{
+  "name": "sdf-csg",
+  "version": "0.0.0",
+  "description": "SDF-based constructive solid geometry",
+  "keywords": [
+    "sdf",
+    "csg",
+    "procedural",
+    "geometry",
+    "mesh",
+    "3d",
+    "webgl"
+  ],
+  "author": {
+    "name": "Rye Terrell",
+    "email": "ryeterrell@ryeterrell.net",
+    "url": "https://wwwtyro.net"
+  },
+  "homepage": "https://github.com/wwwtyro/sdf-csg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wwwtyro/sdf-csg.git"
+  },
+  "license": "Unlicense",
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/index.umd.js",
+  "module": "./lib/index.es.js",
+  "types": "./lib/index",
+  "scripts": {
+    "start": "vite --config vite.example-config.js --host 0.0.0.0",
+    "tsc": "tsc --watch --noEmit --emitDeclarationOnly false",
+    "build-lib": "tsc && vite --config vite.lib-config.js build",
+    "build-example": "tsc && vite --config vite.example-config.js build",
+    "clean": "rm -rf lib docs",
+    "build": "npm run clean && npm run build-lib && npm run build-example"
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.es.js",
+      "require": "./lib/index.umd.js"
+    }
+  },
+  "dependencies": {
+    "gl-matrix": "^3.4.3"
+  },
+  "devDependencies": {
+    "regl": "^2.1.0",
+    "trackball-controller": "^2.0.0",
+    "typescript": "^4.3.2",
+    "vite": "^2.5.4"
+  }
+}

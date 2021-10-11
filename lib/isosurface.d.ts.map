@@ -1,0 +1,1 @@
+{"version":3,"file":"isosurface.d.ts","sourceRoot":"","sources":["../src/isosurface.ts"],"names":[],"mappings":"AA2BA,UAAU,IAAI;IACZ,GAAG,CAAC,CAAC,EAAE,MAAM,EAAE,CAAC,EAAE,MAAM,EAAE,CAAC,EAAE,MAAM,GAAG,MAAM,CAAC;IAC7C,KAAK,EAAE,MAAM,EAAE,CAAC;CACjB;AAED,wBAAgB,mBAAmB,CAAC,OAAO,EAAE,IAAI,EAAE,KAAK,EAAE,MAAM;;;EAqG/D"}
